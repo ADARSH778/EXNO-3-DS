@@ -42,7 +42,7 @@ df=pd.read_csv("Encoding Data.csv")
 df
 ```
 ![image](https://github.com/user-attachments/assets/704cc4d4-40ec-4e31-a24a-fcd59840aabd)
-### Ordinal Encoder
+
 ```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
 pm=['Hot','Warm','Cold']
@@ -61,7 +61,7 @@ df['bo2']=e1.fit_transform(df[["ord_2"]])
 df
 ```
 ![image](https://github.com/user-attachments/assets/1ec3056f-c6d5-49f8-bf03-dd27a021ae8a)
-### Label Encoder 
+
 ```
 le=LabelEncoder()
 dfc=df.copy()
@@ -69,7 +69,7 @@ dfc['ord_2']=le.fit_transform(dfc['ord_2'])
 dfc
 ```
 ![image](https://github.com/user-attachments/assets/0e9fd189-a180-4031-bb09-feba1295a25e)
-### One Hot Encoder
+
 ```
 from sklearn.preprocessing import OneHotEncoder
 ohe=OneHotEncoder(sparse=False)
@@ -84,7 +84,7 @@ df2
 pd.get_dummies(df2,columns=["nom_0"])
 ```
 ![image](https://github.com/user-attachments/assets/b8ad26a6-ff35-4c31-ba01-3e0e7cc84a77)
-### Binary Encoder
+
 ```
 pip install --upgrade category_encoders
 ```
@@ -105,7 +105,7 @@ dfb1=df.copy()
 dfb
 ```
 ![image](https://github.com/user-attachments/assets/e7a7bcf9-55a4-4256-b514-f59518cd9097)
-### Target Encoder
+
 ```
 from category_encoders import TargetEncoder
 te=TargetEncoder()
