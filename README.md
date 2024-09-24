@@ -5,7 +5,7 @@ To read the given data and perform Feature Encoding and Transformation process a
 
 ## ALGORITHM:
 ### STEP 1:
-Read the given Data.
+Read the given Data. 
 ### STEP 2:
 Clean the Data Set using Data Cleaning Process.
 ### STEP 3:
